@@ -63,7 +63,7 @@ function cadastrar(){
     return(
         <>
         <Navbar/>
-        <div className= "form-cadastro">
+        <div className= "form-cadastro ">
             <form className="text-center form-login mx-auto mt-5">
                 <h1 className="h3 mb-3 text-black font-weight-blod"> Cadastro</h1>
 
@@ -71,8 +71,8 @@ function cadastrar(){
                 <input onChange={(e)=> setSenha(e.target.value)} type="password" className='form-control my-2' placeholder= "Senha"/>
 
         	    {
-                    carregando ? <div class="spinner-border text-danger" role="status"><span class="sr-only">Loading...</span></div>
-                    : <button onClick={cadastrar} type='button' className='btn btn-lg btn-block mt-3 mb-5 btn-cadastro'>Cadastrar</button>
+                    carregando ? <div class="spinner-border text-danger " role="status"><span class="sr-only">Loading...</span></div>
+                    : <button onClick={cadastrar} type="button" className="btn btn-lg btn-center mt-3 mb-5 btn-cadastro">Cadastrar</button>
                 }
                 
                 
